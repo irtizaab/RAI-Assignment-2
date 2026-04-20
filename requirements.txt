@@ -1,0 +1,41 @@
+# ──────────────────────────────────────────────────────────────────────────────
+# requirements.txt — RAI Content Moderation Pipeline
+# Python  : 3.12.12
+# Platform: Kaggle (dockerImageVersionId 31329) · NVIDIA Tesla T4 (GPU parts)
+#
+# Install: pip install -r requirements.txt
+# For GPU: ensure CUDA 12.x drivers are present before installing torch.
+# ──────────────────────────────────────────────────────────────────────────────
+
+# ── Core scientific stack ──────────────────────────────────────────────────
+numpy==1.26.4
+pandas==2.2.3
+scipy==1.13.1
+matplotlib==3.9.2
+seaborn==0.13.2
+
+# ── Machine learning ──────────────────────────────────────────────────────
+scikit-learn==1.5.2
+
+# ── Deep learning (GPU) ───────────────────────────────────────────────────
+# CPU-only alternative: pip install torch==2.5.1+cpu -f https://download.pytorch.org/whl/torch_stable.html
+torch==2.5.1
+torchvision==0.20.1
+
+# ── HuggingFace ───────────────────────────────────────────────────────────
+transformers==4.46.3
+datasets==3.1.0
+tokenizers==0.20.3
+huggingface-hub==0.26.2
+accelerate==1.1.1
+safetensors==0.4.5
+
+# ── Responsible AI / Fairness ─────────────────────────────────────────────
+aif360==0.6.1
+fairlearn==0.10.0
+
+# ── Utilities ─────────────────────────────────────────────────────────────
+tqdm==4.66.6
+regex==2024.9.11
+filelock==3.16.1
+packaging==24.1
